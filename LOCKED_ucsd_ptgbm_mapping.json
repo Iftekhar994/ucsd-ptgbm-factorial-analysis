@@ -1,0 +1,39 @@
+{
+  "dataset": "UCSD-PTGBM",
+  "source_preprocessed_dir": "/kaggle/input/datasets/iftekhar994/clean-brain-tumor-dataset/preprocessed_rsi_5class",
+  "n_files_audited": 184,
+  "n_channels": 6,
+  "dataset_label_fingerprint_sha256": "3da413606f8b7c10139f867ae37811f4c827dbb34a34693f42cd0c8c13cda72c",
+  "locked_channel_mapping": {
+    "0": "T1",
+    "1": "T1ce",
+    "2": "T2",
+    "3": "FLAIR",
+    "4": "RSI_Cellularity",
+    "5": "ADC"
+  },
+  "locked_label_mapping": {
+    "0": "Background",
+    "1": "Non-enhancing Tumor Core (NETC)",
+    "2": "Surrounding Non-enhancing FLAIR Hyperintensity (SNFH)",
+    "3": "Enhancing Tissue (ET)",
+    "4": "Resection Cavity (RC)"
+  },
+  "confidence": {
+    "channel_0_T1": "high",
+    "channel_1_T1ce": "very_high",
+    "channel_2_T2": "very_high",
+    "channel_3_FLAIR": "very_high",
+    "channel_4_RSI_Cellularity": "high",
+    "channel_5_ADC": "very_high",
+    "label_1_NETC": "very_high",
+    "label_2_SNFH": "very_high",
+    "label_3_ET": "very_high",
+    "label_4_RC": "very_high"
+  },
+  "evidence_summary": {
+    "labels": "Multi-case visual audit agrees with the BraTS post-treatment convention used by the UCSD-PTGBM dataset: label 1 is non-enhancing tumor core, label 2 is surrounding non-enhancing FLAIR hyperintensity, label 3 is enhancing tissue, and label 4 is resection cavity.",
+    "channels": "Channel contrast behavior across representative cases is consistent with: T1, T1ce, T2, FLAIR, RSI cellularity, ADC. In particular, channel 1 shows contrast enhancement; channel 2 has T2-like bright CSF; channel 3 suppresses CSF with FLAIR hyperintensity; channel 5 has ADC-like free-water hyperintensity; channel 4 shows the complementary RSI cellularity behavior."
+  },
+  "provenance_note": "Locked after multi-case visual audit of the 184-file preprocessed dataset and cross-check against the published UCSD-PTGBM description and the BraTS post-treatment label convention. Preserve this file with the analysis outputs."
+}
